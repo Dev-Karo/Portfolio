@@ -317,7 +317,8 @@ section {
   margin-top: 5rem;
 }
 
-.input-box input {
+.input-box input,
+.input-box textarea {
   width: 100%;
   max-width: 500px; /* Ensure a maximum width */
   border-radius: 3rem;
@@ -326,7 +327,8 @@ section {
   font-size: 1.5rem; /* Adjusted font size for better readability */
 }
 
-.input-box input::placeholder {
+.input-box input::placeholder,
+.input-box textarea::placeholder {
   font-size: 1.5rem; /* Match font size to input text */
 }
 
@@ -343,6 +345,12 @@ section {
   left: 15px;
   transform: translateY(-50%);
   color: gray;
+}
+
+/* Styling specifically for the textarea */
+.input-box textarea {
+  resize: none; /* Prevent resizing */
+  height: 150px; /* Set a fixed height */
 }
 
 button.btn {
